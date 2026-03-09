@@ -1,0 +1,5 @@
+workflows:
+  - name: trivial-changes
+    run:
+      if: $containsOnlyFileExtensions([".md"])
+      then: $approve("LGTM")
